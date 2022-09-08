@@ -33,4 +33,5 @@ build/
 .vscode/
 
 
-resources/application.properties
+.env
+scripts

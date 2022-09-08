@@ -20,6 +20,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.edcarlosneves.fluiddata.dtos.FluidDataDto;
 import com.edcarlosneves.fluiddata.models.FluidDataModel;
 import com.edcarlosneves.fluiddata.services.FluidDataService;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
 @CrossOrigin(origins = "*", maxAge = 3600)

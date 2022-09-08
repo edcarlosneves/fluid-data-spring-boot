@@ -1,5 +1,8 @@
 package com.edcarlosneves.fluiddata.services;
 
+import java.util.Optional;
+import java.util.UUID;
+
 import javax.transaction.TransactionScoped;
 import javax.transaction.Transactional;
 
@@ -26,6 +29,10 @@ public class FluidDataService {
     public Page<FluidDataModel> findAll(Pageable pageable) {
         return fluidDataRepository.findAll(pageable);
 
+    }
+
+    public Optional<FluidDataModel> findById(UUID id) {
+        return fluidDataRepository.findById(id);
     }
 
 }
